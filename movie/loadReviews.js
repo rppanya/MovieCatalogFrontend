@@ -35,7 +35,6 @@ function LoadReviews(userId, json) {
 
         if (userId !== null && review.author !== null) {
             if (userId === review.author.userId) {
-                block.find('.reviews-user-name').text(review.author.nickName+' (Мой отзыв)')
                 $('#add-reviews').addClass('d-none')
                 block.find('.review-buttons').removeClass('d-none')
                 myReview = true
