@@ -2,7 +2,7 @@ import URL from '../url.js'
 
 $('.save-review-button').click(function () {
     let data = serializeData()
-    // saveReview(data, localStorage.getItem('movieId'))
+    //saveReview(data, localStorage.getItem('movieId'))
     saveReview(data, location.hash.substring(1))
 })
 
